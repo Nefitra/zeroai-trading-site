@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "as_of_utc": "2026-09-18T07:57:00Z",
+  "public_site_version": "3.0",
+  "study": {
+    "id": "ENTRY-CONFIRMATION-STUDY-0001",
+    "phase": "5B",
+    "status": "FROZEN / AWAITING COMPLETE FRESH SOURCE",
+    "scientific_branch": "entry-confirmation-study-0001",
+    "scientific_head": "964e5140ae7d7dfa108ead9cbae1784432ab3358",
+    "parent_freeze": "33cdbdf1086cb81fd7877d678fab81ce4c25c537"
+  },
+  "arms": [
+    {
+      "experiment": "EXP-0012",
+      "entry_confirmation_required": 1,
+      "role": "CONTROL"
+    },
+    {
+      "experiment": "EXP-0013",
+      "entry_confirmation_required": 2,
+      "role": "TREATMENT"
+    },
+    {
+      "experiment": "EXP-0014",
+      "entry_confirmation_required": 3,
+      "role": "TREATMENT"
+    }
+  ],
+  "training": {
+    "outer_transitions_per_arm": 33340,
+    "candidates_per_arm": 10,
+    "total_candidates": 30,
+    "observation_shape": 474,
+    "action_space": "Discrete(3)",
+    "decision_cadence_minutes": 30,
+    "execution_clock_minutes": 1
+  },
+  "fresh_validation": {
+    "start_utc": "2026-08-24T00:00:00Z",
+    "end_utc": "2026-11-15T23:59:00Z",
+    "expected_rows": 120960,
+    "windows": 12,
+    "action_minutes_per_window": 10000,
+    "total_action_minutes": 120000,
+    "expected_episodes": 360,
+    "snapshot_progress_percent": 30.16,
+    "complete_source_available": false,
+    "performance": "NOT_INSPECTED",
+    "partial_reveal": "FORBIDDEN"
+  },
+  "ci": {
+    "branch": "entry-confirmation-ci-0001",
+    "head": "fc0c6b42d14fb1b16623eb7374ea545c1ca99954",
+    "latest_run_id": 34993605630,
+    "latest_run_date_utc": "2026-09-15T16:13:21Z",
+    "conclusion": "SUCCESS",
+    "validator_checks": "33/33 PASS",
+    "redteam_checks": "49/49 PASS",
+    "evaluation_matrix": "360/360 PASS"
+  },
+  "locks": {
+    "historical_test": "NOT ACCESSED / LOCKED",
+    "selection": "NOT EXECUTED",
+    "live_trading": "NO"
+  },
+  "next_gate": "Complete Fresh source structural validation after 2026-11-15T23:59:00Z; first complete-data check from 2026-11-16."
+}
