@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "as_of_utc": "2026-09-18T07:57:00Z",
-  "public_site_version": "3.0",
+  "public_site_version": "3.1",
   "study": {
     "id": "ENTRY-CONFIRMATION-STUDY-0001",
     "phase": "5B",
@@ -57,12 +57,24 @@
     "conclusion": "SUCCESS",
     "validator_checks": "33/33 PASS",
     "redteam_checks": "49/49 PASS",
-    "evaluation_matrix": "360/360 PASS"
+    "evaluation_matrix": "360/360 PASS",
+    "job_id": 104464202126,
+    "guard_sha256": "D4A79A1005953669E56ED2E872DA7B22973FBA4160623AEC7B49426324105D3C",
+    "validator_sha256": "E1EAF840F8FC975B20F2C23F4C402C89F130D73C7CAEF9DE09818E26F6EEC7AD"
   },
   "locks": {
     "historical_test": "NOT ACCESSED / LOCKED",
     "selection": "NOT EXECUTED",
     "live_trading": "NO"
   },
-  "next_gate": "Complete Fresh source structural validation after 2026-11-15T23:59:00Z; first complete-data check from 2026-11-16."
+  "next_gate": "Complete Fresh source structural validation after 2026-11-15T23:59:00Z; first complete-data check from 2026-11-16.",
+  "public_surfaces": {
+    "lab": "/",
+    "experiments": "/experiments.html",
+    "lineage": "/lineage.html",
+    "methodology": "/methodology.html",
+    "protocol": "/protocol.html",
+    "fresh_matrix": "/matrix.html",
+    "audit_console": "/audit.html"
+  }
 }
