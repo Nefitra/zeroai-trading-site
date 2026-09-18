@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "as_of_utc": "2026-09-18T07:57:00Z",
-  "public_site_version": "3.1",
+  "public_site_version": "3.2",
   "study": {
     "id": "ENTRY-CONFIRMATION-STUDY-0001",
     "phase": "5B",
@@ -75,6 +75,17 @@
     "methodology": "/methodology.html",
     "protocol": "/protocol.html",
     "fresh_matrix": "/matrix.html",
-    "audit_console": "/audit.html"
-  }
+    "audit_console": "/audit.html",
+    "architecture": "/architecture.html",
+    "changelog": "/changelog.html"
+  },
+  "public_disclosure": {
+    "policy": "PUBLIC-SAFE ABSTRACTION",
+    "proprietary_feature_logic": "NOT DISCLOSED",
+    "model_artifacts": "NOT DISCLOSED",
+    "execution_calibration": "NOT DISCLOSED",
+    "operational_infrastructure": "NOT DISCLOSED",
+    "credentials": "NOT DISCLOSED"
+  },
+  "site_change_policy": "FEATURE FREEZE UNTIL NEXT MEANINGFUL SCIENTIFIC EVENT"
 }
