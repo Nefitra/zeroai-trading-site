@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#05080e"><meta name="color-scheme" content="dark"><meta name="description" content="Public structural audit console for the frozen ENTRY Confirmation guard and CI run."><title>Audit Console — ZeroAI Research Lab</title><link rel="stylesheet" href="site.css"><script src="site.js" defer></script></head><body><header><div class="wrap nav"><a class="brand" href="index.html"><span class="mark"></span><span>ZEROAI.TRADE</span></a><nav><a href="index.html">Lab</a><a href="experiments.html">Experiments</a><a href="matrix.html">Matrix</a><a class="active" href="audit.html">Audit</a><a class="pill" href="protocol.html">Protocol</a></nav></div></header><main><div class="wrap">
+<section class="hero"><div class="eyebrow"><span class="dot"></span> public audit console</div><h1>Proof of process, <span>not proof of profit.</span></h1><p class="lead">This console surfaces the structural checks actually observed in the latest CI run. It verifies frozen lineage and fail-closed guard behavior while explicitly refusing model loading, inference, performance inspection, selection, TEST access and live trading.</p><div class="hero-meta"><span class="badge good pulse-status">CI SUCCESS</span><span class="badge info">RUN 34993605630</span><span class="badge info">PYTHON 3.13.15</span><span class="badge warn">READ-ONLY REVIEW</span></div></section>
+<section><div class="console" data-audit-console><div class="console-bar"><div class="console-dots"><i></i><i></i><i></i></div><div class="console-title">ENTRY Confirmation Frozen CI · run #2</div><div class="badge good">SUCCESS</div></div><div class="console-body">
+<div class="audit-line"><span class="ts">16:13:21Z</span> <span class="dim">$ checkout entry-confirmation-ci-0001 @ fc0c6b42…</span></div>
+<div class="audit-line"><span class="ts">16:13:22Z</span> <span class="ok">PASS</span> frozen scientific SHA 964e514… is ancestor</div>
+<div class="audit-line"><span class="ts">16:13:22Z</span> <span class="ok">PASS</span> only delta from frozen base = CI workflow</div>
+<div class="audit-line"><span class="ts">16:13:23Z</span> compile execution guard + validator + red-team</div>
+<div class="audit-line"><span class="ts">16:13:32Z</span> <span class="ok">33 / 33 PASS</span> independent guard checks</div>
+<div class="audit-line"><span class="ts">16:13:32Z</span> <span class="ok">360 / 360 PASS</span> preregistered evaluation matrix</div>
+<div class="audit-line"><span class="ts">16:13:32Z</span> model loading .................... <span class="no">NO</span></div>
+<div class="audit-line"><span class="ts">16:13:32Z</span> inference ........................ <span class="no">NO</span></div>
+<div class="audit-line"><span class="ts">16:13:32Z</span> candidate performance ............ <span class="no">NOT INSPECTED</span></div>
+<div class="audit-line"><span class="ts">16:13:32Z</span> Historical TEST .................. <span class="no">NOT ACCESSED / LOCKED</span></div>
+<div class="audit-line"><span class="ts">16:13:32Z</span> selection ........................ <span class="no">NOT EXECUTED</span></div>
+<div class="audit-line"><span class="ts">16:13:32Z</span> live trading ..................... <span class="no">NO</span></div>
+<div class="audit-line"><span class="ts">16:13:32Z</span> <span class="ok">49 / 49 PASS</span> adversarial red-team checks</div>
+<div class="audit-line"><span class="ts">16:13:32Z</span> <span class="ok">PASS</span> scientific source unchanged</div>
+<div class="audit-line"><span class="ts">16:13:36Z</span> <span class="ok">workflow completed · SUCCESS</span></div>
+</div></div></section>
+<section><div class="section-head"><div><div class="eyebrow">check chain</div><h2>Every review step completed successfully.</h2></div><p>The latest run used read-only repository permissions. The CI branch is technical infrastructure; it does not move the frozen scientific HEAD.</p></div><div class="audit-checks">
+<div class="audit-check"><span class="tick">✓</span><div><b>Frozen base ancestry</b><small>Scientific HEAD remains 964e5140…</small></div></div>
+<div class="audit-check"><span class="tick">✓</span><div><b>CI-only delta</b><small>Only .github/workflows/entry-confirmation-ci.yml differs</small></div></div>
+<div class="audit-check"><span class="tick">✓</span><div><b>Toolchain compile</b><small>Guard, independent validator and red-team compile</small></div></div>
+<div class="audit-check"><span class="tick">✓</span><div><b>Independent validator</b><small>33 / 33 checks PASS</small></div></div>
+<div class="audit-check"><span class="tick">✓</span><div><b>Matrix structure</b><small>360 / 360 identities PASS</small></div></div>
+<div class="audit-check"><span class="tick">✓</span><div><b>Adversarial review</b><small>49 / 49 checks PASS</small></div></div>
+<div class="audit-check"><span class="tick">✓</span><div><b>Scientific artifact immutability</b><small>Final re-assertion PASS</small></div></div>
+<div class="audit-check"><span class="tick">✓</span><div><b>Fail-closed boundaries</b><small>No inference, reveal, selection, TEST or live action</small></div></div>
+</div></section>
+<section><div class="section-head"><div><div class="eyebrow">frozen fingerprints</div><h2>Publicly inspectable identifiers.</h2></div></div><div class="grid g2">
+<div class="hash-card"><div class="label">Scientific HEAD</div><code>964e5140ae7d7dfa108ead9cbae1784432ab3358</code></div>
+<div class="hash-card"><div class="label">CI HEAD</div><code>fc0c6b42d14fb1b16623eb7374ea545c1ca99954</code></div>
+<div class="hash-card"><div class="label">Execution guard SHA256 observed in CI</div><code>D4A79A1005953669E56ED2E872DA7B22973FBA4160623AEC7B49426324105D3C</code></div>
+<div class="hash-card"><div class="label">Independent validator SHA256 observed in CI</div><code>E1EAF840F8FC975B20F2C23F4C402C89F130D73C7CAEF9DE09818E26F6EEC7AD</code></div>
+</div></section>
+<section><div class="section-head"><div><div class="eyebrow">what this proves</div><h2>Structural integrity only.</h2></div></div><div class="grid g2"><div class="rule"><strong>Supported claim</strong><p>The frozen execution-guard review toolchain passed the observed CI checks and did not access model performance or Historical TEST.</p></div><div class="rule"><strong>Unsupported claim</strong><p>This CI does not show that any candidate is profitable, eligible, superior, selected or deployable. Those questions remain intentionally unanswered.</p></div></div></section>
+<section><div class="cta-row"><a class="btn primary" href="matrix.html">Explore 360-episode map →</a><a class="btn" href="lineage.html">Scientific lineage</a><a class="btn" href="status.json">status.json</a></div></section><div class="footer"><div class="footer-grid"><div><strong>ZEROAI.TRADE</strong><br><span class="mono">Public Research Lab · verified 18 Sep 2026</span></div><div>Structural research visibility only. Fresh candidate performance remains sealed; Historical TEST and live trading remain locked.</div></div></div></div></main></body></html>
