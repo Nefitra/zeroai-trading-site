@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#05080e"><meta name="color-scheme" content="dark"><meta name="description" content="Public-safe conceptual architecture of the ZeroAI Trading research system."><title>Architecture — ZeroAI Research Lab</title><link rel="stylesheet" href="site.css"><script src="site.js" defer></script></head><body><header><div class="wrap nav"><a class="brand" href="index.html"><span class="mark"></span><span>ZEROAI.TRADE</span></a><nav><a href="index.html">Lab</a><a href="experiments.html">Experiments</a><a href="matrix.html">Matrix</a><a href="audit.html">Audit</a><a class="active" href="architecture.html">Architecture</a><a href="changelog.html">Changelog</a><a class="pill" href="protocol.html">Protocol</a></nav></div></header><main><div class="wrap">
+<section class="hero"><div class="eyebrow"><span class="dot"></span> public architecture · disclosure limited</div><h1>Show the research flow. <span>Protect the implementation.</span></h1><p class="lead">This page explains the major scientific modules and evidence gates at a conceptual level. It intentionally does not disclose proprietary feature construction, policy internals, execution calibration, private source layout, model artifacts, credentials or operational infrastructure.</p><div class="hero-meta"><span class="badge good">PUBLIC ABSTRACTION</span><span class="badge warn">IMPLEMENTATION REDACTED</span><span class="badge info">SCIENTIFIC GATES VISIBLE</span></div></section>
+
+<section><div class="section-head"><div><div class="eyebrow">system map</div><h2>Five layers, one controlled evidence path.</h2></div><p>Arrows show scientific dependency, not a production network diagram.</p></div><div class="arch-map card"><div class="arch-flow">
+<div class="arch-node"><div class="n">01 · MARKET EVIDENCE</div><h3>Historical market data</h3><p>Time-ordered source data enters a causal research pipeline under strict chronology and provenance controls.</p><span class="shield">CAUSAL INPUT</span></div>
+<div class="arch-node redacted"><div class="n">02 · REPRESENTATION</div><h3>Causal observations</h3><p>Market evidence is transformed into model-ready observations while preserving information availability and frozen schema rules.</p><span class="shield">PRIVATE RECIPE</span></div>
+<div class="arch-node redacted"><div class="n">03 · POLICY RESEARCH</div><h3>Frozen candidate generation</h3><p>Preregistered experiments train candidate policies under fixed budgets and fixed treatment definitions.</p><span class="shield">NO TRAIN SELECTION</span></div>
+<div class="arch-node redacted"><div class="n">04 · ECONOMIC SIMULATION</div><h3>Execution + risk environment</h3><p>Actions are evaluated inside a futures-aware accounting and risk environment with causal execution semantics.</p><span class="shield">PRIVATE CALIBRATION</span></div>
+<div class="arch-node"><div class="n">05 · EVIDENCE GATES</div><h3>Fresh → Selection → TEST</h3><p>Performance evidence is revealed only after complete preregistered evaluation and separate authorization gates.</p><span class="shield">FAIL-CLOSED</span></div>
+</div></div></section>
+
+<section><div class="section-head"><div><div class="eyebrow">public boundary</div><h2>What we disclose — and what we do not.</h2></div><p>The goal is scientific transparency without publishing the recipe for reproducing or attacking the system.</p></div><div class="disclosure-grid">
+<div class="disclosure-card card"><h3 class="safe-title">Safe to disclose</h3><ul>
+<li>Research stages, experiment IDs and high-level study purpose.</li>
+<li>Evidence boundaries: TRAIN, Fresh Validation, Historical TEST and deployment.</li>
+<li>Frozen status, aggregate structural counts and CI pass/fail state.</li>
+<li>Whether selection, TEST access or live trading is authorized.</li>
+<li>High-level causality, preregistration and fail-closed methodology.</li>
+</ul></div>
+<div class="disclosure-card card"><h3 class="private-title">Kept private</h3><ul>
+<li>Exact feature-generation recipes, transformations and proprietary signals.</li>
+<li>Internal model weights, checkpoints, optimizer state and training artifacts.</li>
+<li>Detailed execution calibration, private risk tuning and operational parameters.</li>
+<li>Private repository structure beyond what is already intentionally published.</li>
+<li>Credentials, infrastructure topology, deployment endpoints and exchange access.</li>
+</ul></div>
+</div></section>
+
+<section><div class="section-head"><div><div class="eyebrow">scientific controls</div><h2>The public map emphasizes gates, not alpha.</h2></div></div><div class="grid g4">
+<div class="panel card"><h3>Causality gate</h3><p>Information enters the model only when economically available.</p></div>
+<div class="panel card"><h3>Freeze gate</h3><p>Treatments, candidates and decision rules are locked before Fresh reveal.</p></div>
+<div class="panel card"><h3>Reveal gate</h3><p>Partial Fresh performance has no selection authority.</p></div>
+<div class="panel card"><h3>Deployment gate</h3><p>Research success does not automatically authorize live capital.</p></div>
+</div></section>
+
+<section><div class="callout"><strong>Security posture:</strong> architecture shown here is intentionally incomplete. Missing implementation detail is a design choice, not missing documentation. The public site should explain scientific integrity without exposing operational or proprietary internals.</div><div class="cta-row"><a class="btn primary" href="methodology.html">Research methodology →</a><a class="btn" href="changelog.html">Public changelog</a><a class="btn" href="audit.html">Audit console</a></div></section><div class="footer"><div class="footer-grid"><div><strong>ZEROAI.TRADE</strong><br><span class="mono">Public Research Lab · disclosure-limited architecture</span></div><div>Public pages intentionally omit private implementation details, model artifacts, credentials and operational internals.</div></div></div></div></main></body></html>
